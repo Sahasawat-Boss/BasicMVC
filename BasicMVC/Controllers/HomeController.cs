@@ -20,7 +20,13 @@ namespace BasicMVC.Controllers
         //Method จะทำงานคู่กับ File ที่มีส่วนแสดงผลเดียวกัน
         //Method: Index -ส่วนแสดงผล-> Home/Index.cshtml
         {
-            return View();
+            //เอา class มาทำเป็น Object
+            Member m = new Member();
+            m.ID = 100;
+            m.FullName = "Sahasawat Rueankaew";
+            m.Address = "CNX";
+
+            return View(m);
             //return View("Privacy"); //ถ้าใส่ View("Privacy") ก็จะแสดงผลส่วนของ Privacy.cshtml
         }
 

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model BasicMVC.Models.Member
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -21,4 +22,12 @@
             <li>✅ Secure and scalable framework</li>
         </ul>
     </div>
+</div>
+
+<div>
+    <p>
+        รหัส : @Model.ID <br />
+        ชื่อ-สกุล : @Model.FullName <br />
+        ที่อยู่: @Model.Address
+    </p>
 </div>
