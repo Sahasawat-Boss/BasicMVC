@@ -16,12 +16,13 @@ namespace BasicMVC.Controllers
         }
 
         public IActionResult Index()
-        //Method: Index -> Home/Index.cshtml
+        //Method: Index -ส่วนแสดงผล-> Home/Index.cshtml
         {
             return View();
         }
 
         public IActionResult Privacy()
+        //Method: Index -ส่วนแสดงผล-> Home/Privacy.cshtml
         {
             return View();
         }

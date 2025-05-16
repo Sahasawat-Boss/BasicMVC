@@ -20,6 +20,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//Controller เริ่มต้น: Default
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
