@@ -20,7 +20,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-//Controller เริ่มต้น: Default
+//Controller เริ่มต้น set name = Default
 
 app.MapControllerRoute(
     name: "default",
