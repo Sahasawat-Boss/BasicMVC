@@ -19,14 +19,22 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        @* Link 1 *@
+                        @* Link Home Page*@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" 
                             asp-controller="Home" 
                             asp-action="Index">HomePage</a>
+                            @* asp-action (Method) *@
                         </li>
 
-                        @* Link 2 *@
+                        @* Link Faq Page*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area=""
+                               asp-controller="Home"
+                               asp-action="Faq">FaqPage</a>
+                        </li>
+
+                        @* Link Privacy Page *@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" 
                             asp-controller="Home" 

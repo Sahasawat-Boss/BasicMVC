@@ -6,6 +6,7 @@ namespace BasicMVC.Controllers
 {
     public class HomeController : Controller
     //Class: HomeController or Home
+    //ด้านล่างเป็น Method ใน Class
 
     {
         private readonly ILogger<HomeController> _logger;
@@ -16,16 +17,22 @@ namespace BasicMVC.Controllers
         }
 
         public IActionResult Index()
+        //Method จะทำงานคู่กับ File ที่มีส่วนแสดงผลเดียวกัน
         //Method: Index -ส่วนแสดงผล-> Home/Index.cshtml
+        {
+            return View();
+            //return View("Privacy"); //ถ้าใส่ View("Privacy") ก็จะแสดงผลส่วนของ Privacy.cshtml
+        }
+
+        public IActionResult Faq()
+        //Add Method Faq
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Privacy() => View();
         //Method: Index -ส่วนแสดงผล-> Home/Privacy.cshtml
-        {
-            return View();
-        }
+        // Expression Body "=>" เขียนเบบลดรูป
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
