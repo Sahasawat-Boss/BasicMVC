@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace BasicMVC.Controllers
 {
     public class HomeController : Controller
+    //Class: HomeController or Home
+
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -14,6 +16,7 @@ namespace BasicMVC.Controllers
         }
 
         public IActionResult Index()
+        //Method: Index -> Home/Index.cshtml
         {
             return View();
         }
